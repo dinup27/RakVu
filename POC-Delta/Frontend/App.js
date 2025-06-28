@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = () => {
-      axios.get('http://localhost:5000/api/nodes')
+      axios.get('http://localhost:5050/api/nodes')
         .then(response => setNodes(response.data))
         .catch(error => console.error('Error fetching node data:', error));
     };
